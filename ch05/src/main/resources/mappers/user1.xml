@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="kr.co.ch05.mapper.User1Mapper">
+
+    <insert id="insertUser1">
+        INSERT INTO tb_user1 VALUES (#{user_id}, #{name}, #{birth}, #{age})
+    </insert>
+
+    <!--
+        알아서 DTO의 List로 반환해준다!
+        중요한 건 그 안의 dto 개체
+     -->
+    <select id="selectAllUser1" resultType="kr.co.ch05.dto.User1DTO">
+        select * from tb_user1
+    </select>
+
+    <select id="selectUser1" resultType="kr.co.ch05.dto.User1DTO">
+        select * from tb_user1 WHERE user_id=#{user_id}
+    </select>
+
+    <update id="updateUser1">
+        UPDATE tb_user1 SET name=#{name},
+            birth=#{birth},
+            age=#{age}
+        WHERE
+            user_id=#{user_id}
+    </update>
+
+    <delete id="deleteUser1">
+        DELETE FROM tb_user1 WHERE user_id=#{user_id}
+    </delete>
+</mapper>

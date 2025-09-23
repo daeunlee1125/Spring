@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <body>
+        <h3>User2 등록하기</h3>
+
+        <a th:href="@{/}">처음으로</a>
+        <a th:href="@{/user2/list}">목록으로</a>
+        <form th:action="@{/user2/register}" method="post">
+
+            <table border="1">
+                <tr>
+                    <th>아이디</th>
+                    <td><input type="text" name="userId" placeholder="아이디 입력"></td>
+                </tr>
+                <tr>
+                    <th>이름</th>
+                    <td><input type="text" name="name" placeholder="이름 입력"></td>
+                </tr>
+                <tr>
+                    <th>전화번호</th>
+                    <td><input type="text" name="hp" placeholder="전화번호 입력 (- 포함)"></td>
+                </tr>
+                <tr>
+                    <th>성별</th>
+                    <td><select name="gender" id="">
+                        <option value="" onselect="" selected disabled>-- 선택 --</option>
+                        <option value="F">여성</option>
+                        <option value="M">남성</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="right"><input type="submit" value="등록하기"></td>
+                </tr>
+                
+
+            </table>
+        </form>
+    </body>
+</html>

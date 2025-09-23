@@ -46,6 +46,7 @@ public class ShopRepositoryTest {
 
     @Test
     public void test4(){
+
         // select * from customer where name='김유신';
         List<Customer> customerList = queryFactory
                 .selectFrom(qCustomer)
@@ -131,6 +132,7 @@ public class ShopRepositoryTest {
                 .fetchOne();
         System.out.println(resultDTO);
     }
+
     @Test
     public void test10(){
 
@@ -159,6 +161,7 @@ public class ShopRepositoryTest {
         System.out.println(list);
 
     }
+
     @Test
     public void test12(){
         

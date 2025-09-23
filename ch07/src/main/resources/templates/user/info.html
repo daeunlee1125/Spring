@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity6">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <body>
+        <h3>사용자 정보</h3>
+        <a th:href="@{/}">처음</a>
+
+        <p sec:authorize="isAuthenticated()">
+            아이디 : [[${#authentication.principal.user.usid}]]<br>
+            이름 : [[${#authentication.principal.user.name}]]<br>
+            나이 : <span sec:authentication="principal.user.age"></span><br>
+            아이디 : <span sec:authentication="principal.user.role"></span> <br>
+            아이디 : <span sec:authentication="principal.user.regDate"></span><br>
+        </p>
+
+    </body>
+</html>

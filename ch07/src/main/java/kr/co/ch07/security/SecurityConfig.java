@@ -12,6 +12,11 @@ import org.springframework.security.web.SecurityFilterChain;
 public class SecurityConfig {
 
     @Bean
+    /***
+     *
+     *
+     *
+     ***/
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
 
         // 로그인 설정
@@ -32,6 +37,10 @@ public class SecurityConfig {
 
         // 인가 설정
         http.authorizeHttpRequests(authorize -> authorize
+                .requestMatchers("/admin/**").hasRole("ADMIN")
+                .requestMatchers("/manager/**").hasAnyRole("ADMIN", "MANAGER")
+                .requestMatchers("/member/**").hasAnyRole("ADMIN", "MANAGER", "MEMBER")
+                .requestMatchers("/guest/**").permitAll()
                 .anyRequest().permitAll()
         );
 

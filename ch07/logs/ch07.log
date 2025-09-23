@@ -1797,3 +1797,688 @@ org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as express
 2025-09-23T15:18:12.611+09:00  INFO 4692 --- [ch07] [Thread-93] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-09-23T15:18:12.611+09:00  INFO 4692 --- [ch07] [Thread-93] com.zaxxer.hikari.HikariDataSource       : HikariPool-23 - Shutdown initiated...
 2025-09-23T15:18:12.708+09:00  INFO 4692 --- [ch07] [Thread-93] com.zaxxer.hikari.HikariDataSource       : HikariPool-23 - Shutdown completed.
+2025-09-23T15:38:59.126+09:00  INFO 17716 --- [ch07] [restartedMain] kr.co.ch07.Ch07Application               : Starting Ch07Application using Java 21.0.8 with PID 17716 (C:\Users\GGG\Desktop\Workspace\Spring\ch07\build\classes\java\main started by GGG in C:\Users\GGG\Desktop\Workspace\Spring\ch07)
+2025-09-23T15:38:59.129+09:00  INFO 17716 --- [ch07] [restartedMain] kr.co.ch07.Ch07Application               : No active profile set, falling back to 1 default profile: "default"
+2025-09-23T15:38:59.178+09:00  INFO 17716 --- [ch07] [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\GGG\.gradle\caches\modules-2\files-2.1\com.oracle.database.jdbc\ojdbc11\23.7.0.25.01\665f52abef9122ce003b5cfc1d9d44f7302e2cfe\ojdbc11-23.7.0.25.01.jar referenced one or more files that do not exist: file:/C:/Users/GGG/.gradle/caches/modules-2/files-2.1/com.oracle.database.jdbc/ojdbc11/23.7.0.25.01/665f52abef9122ce003b5cfc1d9d44f7302e2cfe/oraclepki.jar
+2025-09-23T15:38:59.179+09:00  INFO 17716 --- [ch07] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-09-23T15:38:59.179+09:00  INFO 17716 --- [ch07] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-09-23T15:38:59.978+09:00  INFO 17716 --- [ch07] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-23T15:39:00.028+09:00  INFO 17716 --- [ch07] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39 ms. Found 1 JPA repository interface.
+2025-09-23T15:39:00.182+09:00  WARN 17716 --- [ch07] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.co.ch07]' package. Please check your configuration.
+2025-09-23T15:39:01.017+09:00  INFO 17716 --- [ch07] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-09-23T15:39:01.088+09:00  INFO 17716 --- [ch07] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-23T15:39:01.090+09:00  INFO 17716 --- [ch07] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-09-23T15:39:01.249+09:00  INFO 17716 --- [ch07] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ch07]   : Initializing Spring embedded WebApplicationContext
+2025-09-23T15:39:01.251+09:00  INFO 17716 --- [ch07] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2070 ms
+2025-09-23T15:39:01.619+09:00  INFO 17716 --- [ch07] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-23T15:39:01.690+09:00  INFO 17716 --- [ch07] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-09-23T15:39:01.739+09:00  INFO 17716 --- [ch07] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-23T15:39:02.053+09:00  INFO 17716 --- [ch07] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-23T15:39:02.087+09:00  INFO 17716 --- [ch07] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-23T15:39:02.094+09:00  WARN 17716 --- [ch07] [restartedMain] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2025-09-23T15:39:02.556+09:00  INFO 17716 --- [ch07] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@306cf94c
+2025-09-23T15:39:02.560+09:00  INFO 17716 --- [ch07] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-23T15:39:02.933+09:00  INFO 17716 --- [ch07] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 21.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-23T15:39:03.816+09:00  INFO 17716 --- [ch07] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-23T15:39:04.679+09:00  INFO 17716 --- [ch07] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-23T15:39:04.870+09:00  WARN 17716 --- [ch07] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-23T15:39:04.901+09:00  INFO 17716 --- [ch07] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name myUserDetailsService
+2025-09-23T15:39:05.011+09:00  INFO 17716 --- [ch07] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-09-23T15:39:05.382+09:00  INFO 17716 --- [ch07] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-09-23T15:39:05.412+09:00  INFO 17716 --- [ch07] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch07'
+2025-09-23T15:39:05.419+09:00  INFO 17716 --- [ch07] [restartedMain] kr.co.ch07.Ch07Application               : Started Ch07Application in 6.788 seconds (process running for 7.424)
+2025-09-23T15:39:12.859+09:00  INFO 17716 --- [ch07] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 9 class path changes (0 additions, 0 deletions, 9 modifications)
+2025-09-23T15:39:12.862+09:00  INFO 17716 --- [ch07] [Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-23T15:39:12.866+09:00  INFO 17716 --- [ch07] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-09-23T15:39:12.870+09:00  INFO 17716 --- [ch07] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-23T15:39:12.872+09:00  INFO 17716 --- [ch07] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-09-23T15:39:12.975+09:00  INFO 17716 --- [ch07] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-09-23T15:39:13.047+09:00  INFO 17716 --- [ch07] [restartedMain] kr.co.ch07.Ch07Application               : Starting Ch07Application using Java 21.0.8 with PID 17716 (C:\Users\GGG\Desktop\Workspace\Spring\ch07\build\classes\java\main started by GGG in C:\Users\GGG\Desktop\Workspace\Spring\ch07)
+2025-09-23T15:39:13.047+09:00  INFO 17716 --- [ch07] [restartedMain] kr.co.ch07.Ch07Application               : No active profile set, falling back to 1 default profile: "default"
+2025-09-23T15:39:13.247+09:00  INFO 17716 --- [ch07] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-23T15:39:13.256+09:00  INFO 17716 --- [ch07] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interface.
+2025-09-23T15:39:13.296+09:00  WARN 17716 --- [ch07] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.co.ch07]' package. Please check your configuration.
+2025-09-23T15:39:13.339+09:00  INFO 17716 --- [ch07] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-09-23T15:39:13.340+09:00  INFO 17716 --- [ch07] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-23T15:39:13.340+09:00  INFO 17716 --- [ch07] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-09-23T15:39:13.358+09:00  INFO 17716 --- [ch07] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ch07]   : Initializing Spring embedded WebApplicationContext
+2025-09-23T15:39:13.358+09:00  INFO 17716 --- [ch07] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 309 ms
+2025-09-23T15:39:13.385+09:00  INFO 17716 --- [ch07] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-23T15:39:13.389+09:00  INFO 17716 --- [ch07] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-23T15:39:13.398+09:00  INFO 17716 --- [ch07] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-23T15:39:13.399+09:00  INFO 17716 --- [ch07] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-09-23T15:39:13.399+09:00  WARN 17716 --- [ch07] [restartedMain] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2025-09-23T15:39:13.526+09:00  INFO 17716 --- [ch07] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection oracle.jdbc.driver.T4CConnection@6d9f3e17
+2025-09-23T15:39:13.527+09:00  INFO 17716 --- [ch07] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-09-23T15:39:13.594+09:00  INFO 17716 --- [ch07] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 21.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-23T15:39:13.625+09:00  INFO 17716 --- [ch07] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-23T15:39:14.322+09:00  INFO 17716 --- [ch07] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-23T15:39:14.368+09:00  WARN 17716 --- [ch07] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-23T15:39:14.374+09:00  INFO 17716 --- [ch07] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name myUserDetailsService
+2025-09-23T15:39:14.391+09:00  INFO 17716 --- [ch07] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-09-23T15:39:14.479+09:00  INFO 17716 --- [ch07] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-09-23T15:39:14.487+09:00  INFO 17716 --- [ch07] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch07'
+2025-09-23T15:39:14.490+09:00  INFO 17716 --- [ch07] [restartedMain] kr.co.ch07.Ch07Application               : Started Ch07Application in 1.469 seconds (process running for 16.495)
+2025-09-23T15:39:14.491+09:00  INFO 17716 --- [ch07] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-09-23T15:39:16.806+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/ch07]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-23T15:39:16.807+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-09-23T15:39:16.808+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-09-23T15:39:16.879+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-2] kr.co.ch07.controller.MainController     : index1 - null
+2025-09-23T15:39:20.627+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-5] kr.co.ch07.controller.MainController     : index1 - null
+2025-09-23T15:39:22.065+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-8] kr.co.ch07.controller.MainController     : index1 - null
+2025-09-23T15:39:24.835+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-6] kr.co.ch07.controller.MainController     : index1 - null
+2025-09-23T15:39:26.675+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-10] kr.co.ch07.controller.MainController     : index1 - null
+2025-09-23T15:39:45.376+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-1] kr.co.ch07.controller.MainController     : index1 - null
+2025-09-23T15:39:45.871+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-2] kr.co.ch07.controller.MainController     : index1 - null
+2025-09-23T15:39:46.087+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-3] kr.co.ch07.controller.MainController     : index1 - null
+2025-09-23T15:39:47.235+09:00  INFO 17716 --- [ch07] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 9 class path changes (0 additions, 0 deletions, 9 modifications)
+2025-09-23T15:39:47.236+09:00  INFO 17716 --- [ch07] [Thread-9] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-23T15:39:47.239+09:00  INFO 17716 --- [ch07] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-09-23T15:39:47.242+09:00  INFO 17716 --- [ch07] [Thread-9] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-23T15:39:47.242+09:00  INFO 17716 --- [ch07] [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-09-23T15:39:47.346+09:00  INFO 17716 --- [ch07] [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2025-09-23T15:39:47.414+09:00  INFO 17716 --- [ch07] [restartedMain] kr.co.ch07.Ch07Application               : Starting Ch07Application using Java 21.0.8 with PID 17716 (C:\Users\GGG\Desktop\Workspace\Spring\ch07\build\classes\java\main started by GGG in C:\Users\GGG\Desktop\Workspace\Spring\ch07)
+2025-09-23T15:39:47.415+09:00  INFO 17716 --- [ch07] [restartedMain] kr.co.ch07.Ch07Application               : No active profile set, falling back to 1 default profile: "default"
+2025-09-23T15:39:47.594+09:00  INFO 17716 --- [ch07] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-23T15:39:47.602+09:00  INFO 17716 --- [ch07] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interface.
+2025-09-23T15:39:47.641+09:00  WARN 17716 --- [ch07] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.co.ch07]' package. Please check your configuration.
+2025-09-23T15:39:47.681+09:00  INFO 17716 --- [ch07] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-09-23T15:39:47.682+09:00  INFO 17716 --- [ch07] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-23T15:39:47.682+09:00  INFO 17716 --- [ch07] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-09-23T15:39:47.699+09:00  INFO 17716 --- [ch07] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ch07]   : Initializing Spring embedded WebApplicationContext
+2025-09-23T15:39:47.699+09:00  INFO 17716 --- [ch07] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 283 ms
+2025-09-23T15:39:47.721+09:00  INFO 17716 --- [ch07] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-23T15:39:47.725+09:00  INFO 17716 --- [ch07] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-23T15:39:47.732+09:00  INFO 17716 --- [ch07] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-23T15:39:47.733+09:00  INFO 17716 --- [ch07] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2025-09-23T15:39:47.733+09:00  WARN 17716 --- [ch07] [restartedMain] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2025-09-23T15:39:47.867+09:00  INFO 17716 --- [ch07] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection oracle.jdbc.driver.T4CConnection@74b3fc99
+2025-09-23T15:39:47.867+09:00  INFO 17716 --- [ch07] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2025-09-23T15:39:47.943+09:00  INFO 17716 --- [ch07] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 21.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-23T15:39:47.979+09:00  INFO 17716 --- [ch07] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-23T15:39:48.683+09:00  INFO 17716 --- [ch07] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-23T15:39:48.727+09:00  WARN 17716 --- [ch07] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-23T15:39:48.736+09:00  INFO 17716 --- [ch07] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name myUserDetailsService
+2025-09-23T15:39:48.753+09:00  INFO 17716 --- [ch07] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-09-23T15:39:48.819+09:00  INFO 17716 --- [ch07] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-09-23T15:39:48.829+09:00  INFO 17716 --- [ch07] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch07'
+2025-09-23T15:39:48.832+09:00  INFO 17716 --- [ch07] [restartedMain] kr.co.ch07.Ch07Application               : Started Ch07Application in 1.439 seconds (process running for 50.837)
+2025-09-23T15:39:48.832+09:00  INFO 17716 --- [ch07] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-09-23T15:40:28.141+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/ch07]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-23T15:40:28.141+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-09-23T15:40:28.142+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-09-23T15:42:03.504+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-3] kr.co.ch07.controller.MainController     : index1 - UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=User(usid=a204, pass=$2a$10$2qfQxilNqoJ45nik04/T3uZ1u7dCL9bJiKgJ2pxHmDKESQQArpYfG, name=김춘추, age=55, role=MANAGER, regDate=2025-09-23T15:41:39.881895)), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_MANAGER]]
+2025-09-23T15:42:03.506+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-3] kr.co.ch07.controller.MainController     : index2 - User(usid=a204, pass=$2a$10$2qfQxilNqoJ45nik04/T3uZ1u7dCL9bJiKgJ2pxHmDKESQQArpYfG, name=김춘추, age=55, role=MANAGER, regDate=2025-09-23T15:41:39.881895)
+2025-09-23T15:42:44.913+09:00  INFO 17716 --- [ch07] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 9 class path changes (0 additions, 0 deletions, 9 modifications)
+2025-09-23T15:42:44.914+09:00  INFO 17716 --- [ch07] [Thread-13] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-23T15:42:44.917+09:00  INFO 17716 --- [ch07] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-09-23T15:42:44.919+09:00  INFO 17716 --- [ch07] [Thread-13] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-23T15:42:44.920+09:00  INFO 17716 --- [ch07] [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2025-09-23T15:42:45.025+09:00  INFO 17716 --- [ch07] [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2025-09-23T15:42:45.091+09:00  INFO 17716 --- [ch07] [restartedMain] kr.co.ch07.Ch07Application               : Starting Ch07Application using Java 21.0.8 with PID 17716 (C:\Users\GGG\Desktop\Workspace\Spring\ch07\build\classes\java\main started by GGG in C:\Users\GGG\Desktop\Workspace\Spring\ch07)
+2025-09-23T15:42:45.092+09:00  INFO 17716 --- [ch07] [restartedMain] kr.co.ch07.Ch07Application               : No active profile set, falling back to 1 default profile: "default"
+2025-09-23T15:42:45.274+09:00  INFO 17716 --- [ch07] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-23T15:42:45.283+09:00  INFO 17716 --- [ch07] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interface.
+2025-09-23T15:42:45.334+09:00  WARN 17716 --- [ch07] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.co.ch07]' package. Please check your configuration.
+2025-09-23T15:42:45.378+09:00  INFO 17716 --- [ch07] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-09-23T15:42:45.379+09:00  INFO 17716 --- [ch07] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-23T15:42:45.379+09:00  INFO 17716 --- [ch07] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-09-23T15:42:45.396+09:00  INFO 17716 --- [ch07] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ch07]   : Initializing Spring embedded WebApplicationContext
+2025-09-23T15:42:45.396+09:00  INFO 17716 --- [ch07] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 303 ms
+2025-09-23T15:42:45.430+09:00  INFO 17716 --- [ch07] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-23T15:42:45.433+09:00  INFO 17716 --- [ch07] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-23T15:42:45.441+09:00  INFO 17716 --- [ch07] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-23T15:42:45.442+09:00  INFO 17716 --- [ch07] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2025-09-23T15:42:45.442+09:00  WARN 17716 --- [ch07] [restartedMain] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2025-09-23T15:42:45.584+09:00  INFO 17716 --- [ch07] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection oracle.jdbc.driver.T4CConnection@171a99c1
+2025-09-23T15:42:45.584+09:00  INFO 17716 --- [ch07] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2025-09-23T15:42:45.658+09:00  INFO 17716 --- [ch07] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-4)']
+	Database driver: undefined/unknown
+	Database version: 21.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-23T15:42:45.685+09:00  INFO 17716 --- [ch07] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-23T15:42:46.434+09:00  INFO 17716 --- [ch07] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-23T15:42:46.473+09:00  WARN 17716 --- [ch07] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-23T15:42:46.479+09:00  INFO 17716 --- [ch07] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name myUserDetailsService
+2025-09-23T15:42:46.498+09:00  INFO 17716 --- [ch07] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-09-23T15:42:46.562+09:00  INFO 17716 --- [ch07] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-09-23T15:42:46.571+09:00  INFO 17716 --- [ch07] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch07'
+2025-09-23T15:42:46.571+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/ch07]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-23T15:42:46.571+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-09-23T15:42:46.572+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-09-23T15:42:46.573+09:00  INFO 17716 --- [ch07] [restartedMain] kr.co.ch07.Ch07Application               : Started Ch07Application in 1.504 seconds (process running for 228.578)
+2025-09-23T15:42:46.573+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-1] kr.co.ch07.controller.MainController     : index1 - null
+2025-09-23T15:42:46.574+09:00  INFO 17716 --- [ch07] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-09-23T15:45:17.273+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-3] kr.co.ch07.controller.MainController     : index1 - null
+2025-09-23T15:45:17.480+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-6] kr.co.ch07.controller.MainController     : index1 - null
+2025-09-23T15:45:17.654+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-7] kr.co.ch07.controller.MainController     : index1 - null
+2025-09-23T15:45:17.789+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-8] kr.co.ch07.controller.MainController     : index1 - null
+2025-09-23T15:45:17.998+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-9] kr.co.ch07.controller.MainController     : index1 - null
+2025-09-23T15:45:19.398+09:00  INFO 17716 --- [ch07] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-09-23T15:45:19.399+09:00  INFO 17716 --- [ch07] [Thread-17] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-23T15:45:19.402+09:00  INFO 17716 --- [ch07] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-09-23T15:45:19.404+09:00  INFO 17716 --- [ch07] [Thread-17] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-23T15:45:19.404+09:00  INFO 17716 --- [ch07] [Thread-17] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2025-09-23T15:45:19.509+09:00  INFO 17716 --- [ch07] [Thread-17] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2025-09-23T15:45:19.575+09:00  INFO 17716 --- [ch07] [restartedMain] kr.co.ch07.Ch07Application               : Starting Ch07Application using Java 21.0.8 with PID 17716 (C:\Users\GGG\Desktop\Workspace\Spring\ch07\build\classes\java\main started by GGG in C:\Users\GGG\Desktop\Workspace\Spring\ch07)
+2025-09-23T15:45:19.575+09:00  INFO 17716 --- [ch07] [restartedMain] kr.co.ch07.Ch07Application               : No active profile set, falling back to 1 default profile: "default"
+2025-09-23T15:45:19.751+09:00  INFO 17716 --- [ch07] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-23T15:45:19.759+09:00  INFO 17716 --- [ch07] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interface.
+2025-09-23T15:45:19.793+09:00  WARN 17716 --- [ch07] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.co.ch07]' package. Please check your configuration.
+2025-09-23T15:45:19.833+09:00  INFO 17716 --- [ch07] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-09-23T15:45:19.834+09:00  INFO 17716 --- [ch07] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-23T15:45:19.834+09:00  INFO 17716 --- [ch07] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-09-23T15:45:19.852+09:00  INFO 17716 --- [ch07] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ch07]   : Initializing Spring embedded WebApplicationContext
+2025-09-23T15:45:19.852+09:00  INFO 17716 --- [ch07] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 276 ms
+2025-09-23T15:45:19.875+09:00  INFO 17716 --- [ch07] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-23T15:45:19.879+09:00  INFO 17716 --- [ch07] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-23T15:45:19.887+09:00  INFO 17716 --- [ch07] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-23T15:45:19.887+09:00  INFO 17716 --- [ch07] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2025-09-23T15:45:19.888+09:00  WARN 17716 --- [ch07] [restartedMain] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2025-09-23T15:45:20.036+09:00  INFO 17716 --- [ch07] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection oracle.jdbc.driver.T4CConnection@4853e1a4
+2025-09-23T15:45:20.036+09:00  INFO 17716 --- [ch07] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2025-09-23T15:45:20.108+09:00  INFO 17716 --- [ch07] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-5)']
+	Database driver: undefined/unknown
+	Database version: 21.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-23T15:45:20.139+09:00  INFO 17716 --- [ch07] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-23T15:45:20.849+09:00  INFO 17716 --- [ch07] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-23T15:45:20.896+09:00  WARN 17716 --- [ch07] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-23T15:45:20.902+09:00  INFO 17716 --- [ch07] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name myUserDetailsService
+2025-09-23T15:45:20.910+09:00  INFO 17716 --- [ch07] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-09-23T15:45:20.988+09:00  INFO 17716 --- [ch07] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-09-23T15:45:20.998+09:00  INFO 17716 --- [ch07] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch07'
+2025-09-23T15:45:21.001+09:00  INFO 17716 --- [ch07] [restartedMain] kr.co.ch07.Ch07Application               : Started Ch07Application in 1.448 seconds (process running for 383.007)
+2025-09-23T15:45:21.002+09:00  INFO 17716 --- [ch07] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-09-23T15:45:22.130+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/ch07]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-23T15:45:22.131+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-09-23T15:45:22.131+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-09-23T15:45:23.419+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-3] kr.co.ch07.controller.MainController     : index1 - null
+2025-09-23T15:45:28.752+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-7] kr.co.ch07.controller.MainController     : index1 - null
+2025-09-23T15:45:41.579+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-3] kr.co.ch07.controller.MainController     : index1 - UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=User(usid=a202, pass=$2a$10$P2v0ZftB2ZUl00oKmUq6.ul84ZylPRqSl8he7bcz7AZ39BTIuIKzW, name=김철수, age=33, role=ADMIN, regDate=2025-09-23T15:40:48.738117)), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=03C46318E25F99A5C09732E6E5CD9F74], Granted Authorities=[ROLE_ADMIN]]
+2025-09-23T15:45:41.581+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-3] kr.co.ch07.controller.MainController     : index2 - User(usid=a202, pass=$2a$10$P2v0ZftB2ZUl00oKmUq6.ul84ZylPRqSl8he7bcz7AZ39BTIuIKzW, name=김철수, age=33, role=ADMIN, regDate=2025-09-23T15:40:48.738117)
+2025-09-23T15:45:46.777+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-5] kr.co.ch07.controller.MainController     : index1 - UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=User(usid=a202, pass=$2a$10$P2v0ZftB2ZUl00oKmUq6.ul84ZylPRqSl8he7bcz7AZ39BTIuIKzW, name=김철수, age=33, role=ADMIN, regDate=2025-09-23T15:40:48.738117)), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=03C46318E25F99A5C09732E6E5CD9F74], Granted Authorities=[ROLE_ADMIN]]
+2025-09-23T15:45:46.777+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-5] kr.co.ch07.controller.MainController     : index2 - User(usid=a202, pass=$2a$10$P2v0ZftB2ZUl00oKmUq6.ul84ZylPRqSl8he7bcz7AZ39BTIuIKzW, name=김철수, age=33, role=ADMIN, regDate=2025-09-23T15:40:48.738117)
+2025-09-23T15:45:49.241+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-7] kr.co.ch07.controller.MainController     : index1 - UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=User(usid=a202, pass=$2a$10$P2v0ZftB2ZUl00oKmUq6.ul84ZylPRqSl8he7bcz7AZ39BTIuIKzW, name=김철수, age=33, role=ADMIN, regDate=2025-09-23T15:40:48.738117)), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=03C46318E25F99A5C09732E6E5CD9F74], Granted Authorities=[ROLE_ADMIN]]
+2025-09-23T15:45:49.241+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-7] kr.co.ch07.controller.MainController     : index2 - User(usid=a202, pass=$2a$10$P2v0ZftB2ZUl00oKmUq6.ul84ZylPRqSl8he7bcz7AZ39BTIuIKzW, name=김철수, age=33, role=ADMIN, regDate=2025-09-23T15:40:48.738117)
+2025-09-23T15:45:50.920+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-9] kr.co.ch07.controller.MainController     : index1 - UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=User(usid=a202, pass=$2a$10$P2v0ZftB2ZUl00oKmUq6.ul84ZylPRqSl8he7bcz7AZ39BTIuIKzW, name=김철수, age=33, role=ADMIN, regDate=2025-09-23T15:40:48.738117)), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=03C46318E25F99A5C09732E6E5CD9F74], Granted Authorities=[ROLE_ADMIN]]
+2025-09-23T15:45:50.920+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-9] kr.co.ch07.controller.MainController     : index2 - User(usid=a202, pass=$2a$10$P2v0ZftB2ZUl00oKmUq6.ul84ZylPRqSl8he7bcz7AZ39BTIuIKzW, name=김철수, age=33, role=ADMIN, regDate=2025-09-23T15:40:48.738117)
+2025-09-23T15:45:52.248+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-1] kr.co.ch07.controller.MainController     : index1 - UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=User(usid=a202, pass=$2a$10$P2v0ZftB2ZUl00oKmUq6.ul84ZylPRqSl8he7bcz7AZ39BTIuIKzW, name=김철수, age=33, role=ADMIN, regDate=2025-09-23T15:40:48.738117)), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=03C46318E25F99A5C09732E6E5CD9F74], Granted Authorities=[ROLE_ADMIN]]
+2025-09-23T15:45:52.248+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-1] kr.co.ch07.controller.MainController     : index2 - User(usid=a202, pass=$2a$10$P2v0ZftB2ZUl00oKmUq6.ul84ZylPRqSl8he7bcz7AZ39BTIuIKzW, name=김철수, age=33, role=ADMIN, regDate=2025-09-23T15:40:48.738117)
+2025-09-23T15:45:53.801+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-3] kr.co.ch07.controller.MainController     : index1 - UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=User(usid=a202, pass=$2a$10$P2v0ZftB2ZUl00oKmUq6.ul84ZylPRqSl8he7bcz7AZ39BTIuIKzW, name=김철수, age=33, role=ADMIN, regDate=2025-09-23T15:40:48.738117)), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=03C46318E25F99A5C09732E6E5CD9F74], Granted Authorities=[ROLE_ADMIN]]
+2025-09-23T15:45:53.801+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-3] kr.co.ch07.controller.MainController     : index2 - User(usid=a202, pass=$2a$10$P2v0ZftB2ZUl00oKmUq6.ul84ZylPRqSl8he7bcz7AZ39BTIuIKzW, name=김철수, age=33, role=ADMIN, regDate=2025-09-23T15:40:48.738117)
+2025-09-23T15:45:56.241+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-5] kr.co.ch07.controller.MainController     : index1 - UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=User(usid=a202, pass=$2a$10$P2v0ZftB2ZUl00oKmUq6.ul84ZylPRqSl8he7bcz7AZ39BTIuIKzW, name=김철수, age=33, role=ADMIN, regDate=2025-09-23T15:40:48.738117)), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=03C46318E25F99A5C09732E6E5CD9F74], Granted Authorities=[ROLE_ADMIN]]
+2025-09-23T15:45:56.241+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-5] kr.co.ch07.controller.MainController     : index2 - User(usid=a202, pass=$2a$10$P2v0ZftB2ZUl00oKmUq6.ul84ZylPRqSl8he7bcz7AZ39BTIuIKzW, name=김철수, age=33, role=ADMIN, regDate=2025-09-23T15:40:48.738117)
+2025-09-23T15:45:57.681+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-8] kr.co.ch07.controller.MainController     : index1 - null
+2025-09-23T15:46:03.442+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-1] kr.co.ch07.controller.MainController     : index1 - UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=User(usid=a203, pass=$2a$10$JRpm7lWiy0CGXO4VEh8XMuibDCJ0SlndfFAKK6V3odH2AHoZUdMee, name=김유신, age=22, role=MEMBER, regDate=2025-09-23T15:41:28.657237)), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_MEMBER]]
+2025-09-23T15:46:03.442+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-1] kr.co.ch07.controller.MainController     : index2 - User(usid=a203, pass=$2a$10$JRpm7lWiy0CGXO4VEh8XMuibDCJ0SlndfFAKK6V3odH2AHoZUdMee, name=김유신, age=22, role=MEMBER, regDate=2025-09-23T15:41:28.657237)
+2025-09-23T15:46:06.537+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-3] kr.co.ch07.controller.MainController     : index1 - UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=User(usid=a203, pass=$2a$10$JRpm7lWiy0CGXO4VEh8XMuibDCJ0SlndfFAKK6V3odH2AHoZUdMee, name=김유신, age=22, role=MEMBER, regDate=2025-09-23T15:41:28.657237)), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_MEMBER]]
+2025-09-23T15:46:06.537+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-3] kr.co.ch07.controller.MainController     : index2 - User(usid=a203, pass=$2a$10$JRpm7lWiy0CGXO4VEh8XMuibDCJ0SlndfFAKK6V3odH2AHoZUdMee, name=김유신, age=22, role=MEMBER, regDate=2025-09-23T15:41:28.657237)
+2025-09-23T15:46:22.008+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-7] kr.co.ch07.controller.MainController     : index1 - UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=User(usid=a203, pass=$2a$10$JRpm7lWiy0CGXO4VEh8XMuibDCJ0SlndfFAKK6V3odH2AHoZUdMee, name=김유신, age=22, role=MEMBER, regDate=2025-09-23T15:41:28.657237)), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_MEMBER]]
+2025-09-23T15:46:22.009+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-7] kr.co.ch07.controller.MainController     : index2 - User(usid=a203, pass=$2a$10$JRpm7lWiy0CGXO4VEh8XMuibDCJ0SlndfFAKK6V3odH2AHoZUdMee, name=김유신, age=22, role=MEMBER, regDate=2025-09-23T15:41:28.657237)
+2025-09-23T15:46:39.976+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-3] kr.co.ch07.controller.MainController     : index1 - null
+2025-09-23T15:46:42.232+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-6] kr.co.ch07.controller.MainController     : index1 - null
+2025-09-23T15:50:33.007+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-10] kr.co.ch07.controller.MainController     : index1 - null
+2025-09-23T15:50:33.725+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-1] kr.co.ch07.controller.MainController     : index1 - null
+2025-09-23T15:50:33.973+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-2] kr.co.ch07.controller.MainController     : index1 - null
+2025-09-23T15:50:34.558+09:00  INFO 17716 --- [ch07] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 9 class path changes (0 additions, 0 deletions, 9 modifications)
+2025-09-23T15:50:34.559+09:00  INFO 17716 --- [ch07] [Thread-21] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-23T15:50:34.562+09:00  INFO 17716 --- [ch07] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-09-23T15:50:34.565+09:00  INFO 17716 --- [ch07] [Thread-21] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-23T15:50:34.565+09:00  INFO 17716 --- [ch07] [Thread-21] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2025-09-23T15:50:34.669+09:00  INFO 17716 --- [ch07] [Thread-21] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2025-09-23T15:50:34.742+09:00  INFO 17716 --- [ch07] [restartedMain] kr.co.ch07.Ch07Application               : Starting Ch07Application using Java 21.0.8 with PID 17716 (C:\Users\GGG\Desktop\Workspace\Spring\ch07\build\classes\java\main started by GGG in C:\Users\GGG\Desktop\Workspace\Spring\ch07)
+2025-09-23T15:50:34.742+09:00  INFO 17716 --- [ch07] [restartedMain] kr.co.ch07.Ch07Application               : No active profile set, falling back to 1 default profile: "default"
+2025-09-23T15:50:34.916+09:00  INFO 17716 --- [ch07] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-23T15:50:34.922+09:00  INFO 17716 --- [ch07] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interface.
+2025-09-23T15:50:34.956+09:00  WARN 17716 --- [ch07] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.co.ch07]' package. Please check your configuration.
+2025-09-23T15:50:34.993+09:00  INFO 17716 --- [ch07] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-09-23T15:50:34.994+09:00  INFO 17716 --- [ch07] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-23T15:50:34.994+09:00  INFO 17716 --- [ch07] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-09-23T15:50:35.010+09:00  INFO 17716 --- [ch07] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ch07]   : Initializing Spring embedded WebApplicationContext
+2025-09-23T15:50:35.010+09:00  INFO 17716 --- [ch07] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 267 ms
+2025-09-23T15:50:35.036+09:00  INFO 17716 --- [ch07] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-23T15:50:35.039+09:00  INFO 17716 --- [ch07] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-23T15:50:35.047+09:00  INFO 17716 --- [ch07] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-23T15:50:35.049+09:00  INFO 17716 --- [ch07] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2025-09-23T15:50:35.049+09:00  WARN 17716 --- [ch07] [restartedMain] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2025-09-23T15:50:35.177+09:00  INFO 17716 --- [ch07] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection oracle.jdbc.driver.T4CConnection@42e885e1
+2025-09-23T15:50:35.177+09:00  INFO 17716 --- [ch07] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2025-09-23T15:50:35.245+09:00  INFO 17716 --- [ch07] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-6)']
+	Database driver: undefined/unknown
+	Database version: 21.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-23T15:50:35.271+09:00  INFO 17716 --- [ch07] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-23T15:50:35.933+09:00  INFO 17716 --- [ch07] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-23T15:50:35.973+09:00  WARN 17716 --- [ch07] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-23T15:50:35.978+09:00  INFO 17716 --- [ch07] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name myUserDetailsService
+2025-09-23T15:50:35.985+09:00  INFO 17716 --- [ch07] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-09-23T15:50:36.064+09:00  INFO 17716 --- [ch07] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-09-23T15:50:36.076+09:00  INFO 17716 --- [ch07] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch07'
+2025-09-23T15:50:36.079+09:00  INFO 17716 --- [ch07] [restartedMain] kr.co.ch07.Ch07Application               : Started Ch07Application in 1.36 seconds (process running for 698.085)
+2025-09-23T15:50:36.080+09:00  INFO 17716 --- [ch07] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-09-23T15:50:36.211+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/ch07]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-23T15:50:36.211+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-09-23T15:50:36.212+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-09-23T15:50:37.127+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-2] kr.co.ch07.controller.MainController     : index1 - null
+2025-09-23T15:50:46.856+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-6] kr.co.ch07.controller.MainController     : index1 - UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=User(usid=a202, pass=$2a$10$P2v0ZftB2ZUl00oKmUq6.ul84ZylPRqSl8he7bcz7AZ39BTIuIKzW, name=김철수, age=33, role=ADMIN, regDate=2025-09-23T15:40:48.738117)), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=127.0.0.1, SessionId=156BCFC3DF87FB675C84CED54FFB8133], Granted Authorities=[ROLE_ADMIN]]
+2025-09-23T15:50:46.857+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-6] kr.co.ch07.controller.MainController     : index2 - User(usid=a202, pass=$2a$10$P2v0ZftB2ZUl00oKmUq6.ul84ZylPRqSl8he7bcz7AZ39BTIuIKzW, name=김철수, age=33, role=ADMIN, regDate=2025-09-23T15:40:48.738117)
+2025-09-23T15:50:49.441+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-1] kr.co.ch07.controller.MainController     : index1 - UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=User(usid=a202, pass=$2a$10$P2v0ZftB2ZUl00oKmUq6.ul84ZylPRqSl8he7bcz7AZ39BTIuIKzW, name=김철수, age=33, role=ADMIN, regDate=2025-09-23T15:40:48.738117)), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=127.0.0.1, SessionId=156BCFC3DF87FB675C84CED54FFB8133], Granted Authorities=[ROLE_ADMIN]]
+2025-09-23T15:50:49.441+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-1] kr.co.ch07.controller.MainController     : index2 - User(usid=a202, pass=$2a$10$P2v0ZftB2ZUl00oKmUq6.ul84ZylPRqSl8he7bcz7AZ39BTIuIKzW, name=김철수, age=33, role=ADMIN, regDate=2025-09-23T15:40:48.738117)
+2025-09-23T15:50:51.592+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-3] kr.co.ch07.controller.MainController     : index1 - UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=User(usid=a202, pass=$2a$10$P2v0ZftB2ZUl00oKmUq6.ul84ZylPRqSl8he7bcz7AZ39BTIuIKzW, name=김철수, age=33, role=ADMIN, regDate=2025-09-23T15:40:48.738117)), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=127.0.0.1, SessionId=156BCFC3DF87FB675C84CED54FFB8133], Granted Authorities=[ROLE_ADMIN]]
+2025-09-23T15:50:51.592+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-3] kr.co.ch07.controller.MainController     : index2 - User(usid=a202, pass=$2a$10$P2v0ZftB2ZUl00oKmUq6.ul84ZylPRqSl8he7bcz7AZ39BTIuIKzW, name=김철수, age=33, role=ADMIN, regDate=2025-09-23T15:40:48.738117)
+2025-09-23T15:51:09.534+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-7] kr.co.ch07.controller.MainController     : index1 - UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=User(usid=a203, pass=$2a$10$JRpm7lWiy0CGXO4VEh8XMuibDCJ0SlndfFAKK6V3odH2AHoZUdMee, name=김유신, age=22, role=MEMBER, regDate=2025-09-23T15:41:28.657237)), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_MEMBER]]
+2025-09-23T15:51:09.535+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-7] kr.co.ch07.controller.MainController     : index2 - User(usid=a203, pass=$2a$10$JRpm7lWiy0CGXO4VEh8XMuibDCJ0SlndfFAKK6V3odH2AHoZUdMee, name=김유신, age=22, role=MEMBER, regDate=2025-09-23T15:41:28.657237)
+2025-09-23T16:02:30.005+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-10] kr.co.ch07.controller.MainController     : index1 - UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=User(usid=a203, pass=$2a$10$JRpm7lWiy0CGXO4VEh8XMuibDCJ0SlndfFAKK6V3odH2AHoZUdMee, name=김유신, age=22, role=MEMBER, regDate=2025-09-23T15:41:28.657237)), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_MEMBER]]
+2025-09-23T16:02:30.005+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-10] kr.co.ch07.controller.MainController     : index2 - User(usid=a203, pass=$2a$10$JRpm7lWiy0CGXO4VEh8XMuibDCJ0SlndfFAKK6V3odH2AHoZUdMee, name=김유신, age=22, role=MEMBER, regDate=2025-09-23T15:41:28.657237)
+2025-09-23T16:02:30.196+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-1] kr.co.ch07.controller.MainController     : index1 - UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=User(usid=a203, pass=$2a$10$JRpm7lWiy0CGXO4VEh8XMuibDCJ0SlndfFAKK6V3odH2AHoZUdMee, name=김유신, age=22, role=MEMBER, regDate=2025-09-23T15:41:28.657237)), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_MEMBER]]
+2025-09-23T16:02:30.197+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-1] kr.co.ch07.controller.MainController     : index2 - User(usid=a203, pass=$2a$10$JRpm7lWiy0CGXO4VEh8XMuibDCJ0SlndfFAKK6V3odH2AHoZUdMee, name=김유신, age=22, role=MEMBER, regDate=2025-09-23T15:41:28.657237)
+2025-09-23T16:02:30.323+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-2] kr.co.ch07.controller.MainController     : index1 - UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=User(usid=a203, pass=$2a$10$JRpm7lWiy0CGXO4VEh8XMuibDCJ0SlndfFAKK6V3odH2AHoZUdMee, name=김유신, age=22, role=MEMBER, regDate=2025-09-23T15:41:28.657237)), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_MEMBER]]
+2025-09-23T16:02:30.323+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-2] kr.co.ch07.controller.MainController     : index2 - User(usid=a203, pass=$2a$10$JRpm7lWiy0CGXO4VEh8XMuibDCJ0SlndfFAKK6V3odH2AHoZUdMee, name=김유신, age=22, role=MEMBER, regDate=2025-09-23T15:41:28.657237)
+2025-09-23T16:02:30.514+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-3] kr.co.ch07.controller.MainController     : index1 - UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=User(usid=a203, pass=$2a$10$JRpm7lWiy0CGXO4VEh8XMuibDCJ0SlndfFAKK6V3odH2AHoZUdMee, name=김유신, age=22, role=MEMBER, regDate=2025-09-23T15:41:28.657237)), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_MEMBER]]
+2025-09-23T16:02:30.514+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-3] kr.co.ch07.controller.MainController     : index2 - User(usid=a203, pass=$2a$10$JRpm7lWiy0CGXO4VEh8XMuibDCJ0SlndfFAKK6V3odH2AHoZUdMee, name=김유신, age=22, role=MEMBER, regDate=2025-09-23T15:41:28.657237)
+2025-09-23T16:02:30.519+09:00 ERROR 17716 --- [ch07] [http-nio-8080-exec-3] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-3] Exception processing template "index": An error happened during template parsing (template: "class path resource [templates/index.html]")
+
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/index.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372) ~[thymeleaf-spring6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192) ~[thymeleaf-spring6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1438) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.46.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.46.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:125) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:235) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:229) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:319) ~[spring-security-config-6.5.5.jar:6.5.5]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$4(HandlerMappingIntrospector.java:267) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:240) ~[spring-security-config-6.5.5.jar:6.5.5]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1776) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:975) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:493) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: org.attoparser.ParseException: Error during execution of processor 'org.thymeleaf.extras.springsecurity6.dialect.processor.AuthorizeAttrProcessor' (template: "index" - line 33, col 19)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	... 98 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Error during execution of processor 'org.thymeleaf.extras.springsecurity6.dialect.processor.AuthorizeAttrProcessor' (template: "index" - line 33, col 19)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:117) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	... 100 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Failed to evaluate expression 'hasRole('ADMIN', 'MANAGER')'
+	at org.springframework.security.access.expression.ExpressionUtils.evaluateAsBoolean(ExpressionUtils.java:33) ~[spring-security-core-6.5.5.jar:6.5.5]
+	at org.thymeleaf.extras.springsecurity6.auth.AuthUtils$MvcAuthUtils.authorizeUsingAccessExpressionMvc(AuthUtils.java:353) ~[thymeleaf-extras-springsecurity6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.extras.springsecurity6.auth.AuthUtils$MvcAuthUtils.access$100(AuthUtils.java:304) ~[thymeleaf-extras-springsecurity6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.extras.springsecurity6.auth.AuthUtils.authorizeUsingAccessExpression(AuthUtils.java:173) ~[thymeleaf-extras-springsecurity6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.extras.springsecurity6.dialect.processor.AuthorizeAttrProcessor.isVisible(AuthorizeAttrProcessor.java:73) ~[thymeleaf-extras-springsecurity6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.standard.processor.AbstractStandardConditionalVisibilityTagProcessor.doProcess(AbstractStandardConditionalVisibilityTagProcessor.java:61) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	... 113 common frames omitted
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1004E: Method call: Method hasRole(java.lang.String,java.lang.String) cannot be found on type org.springframework.security.web.access.expression.WebSecurityExpressionRoot
+	at org.springframework.expression.spel.ast.MethodReference.findAccessorForMethod(MethodReference.java:238) ~[spring-expression-6.2.11.jar:6.2.11]
+	at org.springframework.expression.spel.ast.MethodReference.getValueInternal(MethodReference.java:148) ~[spring-expression-6.2.11.jar:6.2.11]
+	at org.springframework.expression.spel.ast.MethodReference.getValueInternal(MethodReference.java:108) ~[spring-expression-6.2.11.jar:6.2.11]
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getTypedValue(SpelNodeImpl.java:121) ~[spring-expression-6.2.11.jar:6.2.11]
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:309) ~[spring-expression-6.2.11.jar:6.2.11]
+	at org.springframework.security.access.expression.ExpressionUtils.evaluateAsBoolean(ExpressionUtils.java:30) ~[spring-security-core-6.5.5.jar:6.5.5]
+	... 119 common frames omitted
+
+2025-09-23T16:02:30.533+09:00 ERROR 17716 --- [ch07] [http-nio-8080-exec-3] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [/ch07] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/index.html]")] with root cause
+
+org.springframework.expression.spel.SpelEvaluationException: EL1004E: Method call: Method hasRole(java.lang.String,java.lang.String) cannot be found on type org.springframework.security.web.access.expression.WebSecurityExpressionRoot
+	at org.springframework.expression.spel.ast.MethodReference.findAccessorForMethod(MethodReference.java:238) ~[spring-expression-6.2.11.jar:6.2.11]
+	at org.springframework.expression.spel.ast.MethodReference.getValueInternal(MethodReference.java:148) ~[spring-expression-6.2.11.jar:6.2.11]
+	at org.springframework.expression.spel.ast.MethodReference.getValueInternal(MethodReference.java:108) ~[spring-expression-6.2.11.jar:6.2.11]
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getTypedValue(SpelNodeImpl.java:121) ~[spring-expression-6.2.11.jar:6.2.11]
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:309) ~[spring-expression-6.2.11.jar:6.2.11]
+	at org.springframework.security.access.expression.ExpressionUtils.evaluateAsBoolean(ExpressionUtils.java:30) ~[spring-security-core-6.5.5.jar:6.5.5]
+	at org.thymeleaf.extras.springsecurity6.auth.AuthUtils$MvcAuthUtils.authorizeUsingAccessExpressionMvc(AuthUtils.java:353) ~[thymeleaf-extras-springsecurity6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.extras.springsecurity6.auth.AuthUtils$MvcAuthUtils.access$100(AuthUtils.java:304) ~[thymeleaf-extras-springsecurity6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.extras.springsecurity6.auth.AuthUtils.authorizeUsingAccessExpression(AuthUtils.java:173) ~[thymeleaf-extras-springsecurity6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.extras.springsecurity6.dialect.processor.AuthorizeAttrProcessor.isVisible(AuthorizeAttrProcessor.java:73) ~[thymeleaf-extras-springsecurity6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.standard.processor.AbstractStandardConditionalVisibilityTagProcessor.doProcess(AbstractStandardConditionalVisibilityTagProcessor.java:61) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372) ~[thymeleaf-spring6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192) ~[thymeleaf-spring6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1438) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.46.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.46.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:125) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:235) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:229) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:319) ~[spring-security-config-6.5.5.jar:6.5.5]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$4(HandlerMappingIntrospector.java:267) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:240) ~[spring-security-config-6.5.5.jar:6.5.5]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1776) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:975) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:493) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-09-23T16:02:31.669+09:00  INFO 17716 --- [ch07] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 9 class path changes (0 additions, 0 deletions, 9 modifications)
+2025-09-23T16:02:31.670+09:00  INFO 17716 --- [ch07] [Thread-25] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-23T16:02:31.673+09:00  INFO 17716 --- [ch07] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-09-23T16:02:31.675+09:00  INFO 17716 --- [ch07] [Thread-25] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-23T16:02:31.676+09:00  INFO 17716 --- [ch07] [Thread-25] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2025-09-23T16:02:31.776+09:00  INFO 17716 --- [ch07] [Thread-25] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2025-09-23T16:02:31.847+09:00  INFO 17716 --- [ch07] [restartedMain] kr.co.ch07.Ch07Application               : Starting Ch07Application using Java 21.0.8 with PID 17716 (C:\Users\GGG\Desktop\Workspace\Spring\ch07\build\classes\java\main started by GGG in C:\Users\GGG\Desktop\Workspace\Spring\ch07)
+2025-09-23T16:02:31.848+09:00  INFO 17716 --- [ch07] [restartedMain] kr.co.ch07.Ch07Application               : No active profile set, falling back to 1 default profile: "default"
+2025-09-23T16:02:32.026+09:00  INFO 17716 --- [ch07] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-23T16:02:32.033+09:00  INFO 17716 --- [ch07] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interface.
+2025-09-23T16:02:32.070+09:00  WARN 17716 --- [ch07] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.co.ch07]' package. Please check your configuration.
+2025-09-23T16:02:32.115+09:00  INFO 17716 --- [ch07] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-09-23T16:02:32.116+09:00  INFO 17716 --- [ch07] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-23T16:02:32.116+09:00  INFO 17716 --- [ch07] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-09-23T16:02:32.132+09:00  INFO 17716 --- [ch07] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ch07]   : Initializing Spring embedded WebApplicationContext
+2025-09-23T16:02:32.132+09:00  INFO 17716 --- [ch07] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 283 ms
+2025-09-23T16:02:32.142+09:00  WARN 17716 --- [ch07] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ch07]   : Cannot deserialize session attribute [SPRING_SECURITY_CONTEXT] for session [C9D2E54C6FB5B8A2F6860CB53EFA3CB2]
+2025-09-23T16:02:32.163+09:00  INFO 17716 --- [ch07] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-23T16:02:32.166+09:00  INFO 17716 --- [ch07] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-23T16:02:32.174+09:00  INFO 17716 --- [ch07] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-23T16:02:32.175+09:00  INFO 17716 --- [ch07] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2025-09-23T16:02:32.175+09:00  WARN 17716 --- [ch07] [restartedMain] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2025-09-23T16:02:32.308+09:00  INFO 17716 --- [ch07] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-7 - Added connection oracle.jdbc.driver.T4CConnection@462e5699
+2025-09-23T16:02:32.308+09:00  INFO 17716 --- [ch07] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2025-09-23T16:02:32.378+09:00  INFO 17716 --- [ch07] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-7)']
+	Database driver: undefined/unknown
+	Database version: 21.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-23T16:02:32.408+09:00  INFO 17716 --- [ch07] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-23T16:02:33.100+09:00  INFO 17716 --- [ch07] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-23T16:02:33.158+09:00  WARN 17716 --- [ch07] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-23T16:02:33.164+09:00  INFO 17716 --- [ch07] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name myUserDetailsService
+2025-09-23T16:02:33.174+09:00  INFO 17716 --- [ch07] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-09-23T16:02:33.273+09:00  INFO 17716 --- [ch07] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-09-23T16:02:33.281+09:00  INFO 17716 --- [ch07] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch07'
+2025-09-23T16:02:33.284+09:00  INFO 17716 --- [ch07] [restartedMain] kr.co.ch07.Ch07Application               : Started Ch07Application in 1.459 seconds (process running for 1415.289)
+2025-09-23T16:02:33.285+09:00  INFO 17716 --- [ch07] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-09-23T16:02:33.358+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/ch07]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-23T16:02:33.358+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-09-23T16:02:33.359+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-09-23T16:02:47.816+09:00  INFO 17716 --- [ch07] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 9 class path changes (0 additions, 0 deletions, 9 modifications)
+2025-09-23T16:02:47.817+09:00  INFO 17716 --- [ch07] [Thread-29] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-23T16:02:47.820+09:00  INFO 17716 --- [ch07] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-09-23T16:02:47.822+09:00  INFO 17716 --- [ch07] [Thread-29] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-23T16:02:47.822+09:00  INFO 17716 --- [ch07] [Thread-29] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2025-09-23T16:02:47.923+09:00  INFO 17716 --- [ch07] [Thread-29] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+2025-09-23T16:02:47.993+09:00  INFO 17716 --- [ch07] [restartedMain] kr.co.ch07.Ch07Application               : Starting Ch07Application using Java 21.0.8 with PID 17716 (C:\Users\GGG\Desktop\Workspace\Spring\ch07\build\classes\java\main started by GGG in C:\Users\GGG\Desktop\Workspace\Spring\ch07)
+2025-09-23T16:02:47.993+09:00  INFO 17716 --- [ch07] [restartedMain] kr.co.ch07.Ch07Application               : No active profile set, falling back to 1 default profile: "default"
+2025-09-23T16:02:48.168+09:00  INFO 17716 --- [ch07] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-23T16:02:48.175+09:00  INFO 17716 --- [ch07] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interface.
+2025-09-23T16:02:48.210+09:00  WARN 17716 --- [ch07] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.co.ch07]' package. Please check your configuration.
+2025-09-23T16:02:48.248+09:00  INFO 17716 --- [ch07] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-09-23T16:02:48.248+09:00  INFO 17716 --- [ch07] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-23T16:02:48.248+09:00  INFO 17716 --- [ch07] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-09-23T16:02:48.264+09:00  INFO 17716 --- [ch07] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ch07]   : Initializing Spring embedded WebApplicationContext
+2025-09-23T16:02:48.264+09:00  INFO 17716 --- [ch07] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 269 ms
+2025-09-23T16:02:48.286+09:00  INFO 17716 --- [ch07] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-23T16:02:48.289+09:00  INFO 17716 --- [ch07] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-23T16:02:48.296+09:00  INFO 17716 --- [ch07] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-23T16:02:48.297+09:00  INFO 17716 --- [ch07] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
+2025-09-23T16:02:48.297+09:00  WARN 17716 --- [ch07] [restartedMain] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2025-09-23T16:02:48.429+09:00  INFO 17716 --- [ch07] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-8 - Added connection oracle.jdbc.driver.T4CConnection@55e4843e
+2025-09-23T16:02:48.430+09:00  INFO 17716 --- [ch07] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
+2025-09-23T16:02:48.502+09:00  INFO 17716 --- [ch07] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-8)']
+	Database driver: undefined/unknown
+	Database version: 21.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-23T16:02:48.526+09:00  INFO 17716 --- [ch07] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-23T16:02:49.234+09:00  INFO 17716 --- [ch07] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-23T16:02:49.276+09:00  WARN 17716 --- [ch07] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-23T16:02:49.281+09:00  INFO 17716 --- [ch07] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name myUserDetailsService
+2025-09-23T16:02:49.288+09:00  INFO 17716 --- [ch07] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-09-23T16:02:49.360+09:00  INFO 17716 --- [ch07] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-09-23T16:02:49.368+09:00  INFO 17716 --- [ch07] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch07'
+2025-09-23T16:02:49.371+09:00  INFO 17716 --- [ch07] [restartedMain] kr.co.ch07.Ch07Application               : Started Ch07Application in 1.404 seconds (process running for 1431.376)
+2025-09-23T16:02:49.371+09:00  INFO 17716 --- [ch07] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-09-23T16:02:52.004+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/ch07]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-23T16:02:52.004+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-09-23T16:02:52.005+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-09-23T16:02:52.171+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-2] kr.co.ch07.controller.MainController     : index1 - UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=User(usid=a202, pass=$2a$10$P2v0ZftB2ZUl00oKmUq6.ul84ZylPRqSl8he7bcz7AZ39BTIuIKzW, name=김철수, age=33, role=ADMIN, regDate=2025-09-23T15:40:48.738117)), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=C9D2E54C6FB5B8A2F6860CB53EFA3CB2], Granted Authorities=[ROLE_ADMIN]]
+2025-09-23T16:02:52.173+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-2] kr.co.ch07.controller.MainController     : index2 - User(usid=a202, pass=$2a$10$P2v0ZftB2ZUl00oKmUq6.ul84ZylPRqSl8he7bcz7AZ39BTIuIKzW, name=김철수, age=33, role=ADMIN, regDate=2025-09-23T15:40:48.738117)
+2025-09-23T16:02:55.565+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-4] kr.co.ch07.controller.MainController     : index1 - UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=User(usid=a202, pass=$2a$10$P2v0ZftB2ZUl00oKmUq6.ul84ZylPRqSl8he7bcz7AZ39BTIuIKzW, name=김철수, age=33, role=ADMIN, regDate=2025-09-23T15:40:48.738117)), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=C9D2E54C6FB5B8A2F6860CB53EFA3CB2], Granted Authorities=[ROLE_ADMIN]]
+2025-09-23T16:02:55.565+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-4] kr.co.ch07.controller.MainController     : index2 - User(usid=a202, pass=$2a$10$P2v0ZftB2ZUl00oKmUq6.ul84ZylPRqSl8he7bcz7AZ39BTIuIKzW, name=김철수, age=33, role=ADMIN, regDate=2025-09-23T15:40:48.738117)
+2025-09-23T16:02:57.102+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-7] kr.co.ch07.controller.MainController     : index1 - UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=User(usid=a202, pass=$2a$10$P2v0ZftB2ZUl00oKmUq6.ul84ZylPRqSl8he7bcz7AZ39BTIuIKzW, name=김철수, age=33, role=ADMIN, regDate=2025-09-23T15:40:48.738117)), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=C9D2E54C6FB5B8A2F6860CB53EFA3CB2], Granted Authorities=[ROLE_ADMIN]]
+2025-09-23T16:02:57.102+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-7] kr.co.ch07.controller.MainController     : index2 - User(usid=a202, pass=$2a$10$P2v0ZftB2ZUl00oKmUq6.ul84ZylPRqSl8he7bcz7AZ39BTIuIKzW, name=김철수, age=33, role=ADMIN, regDate=2025-09-23T15:40:48.738117)
+2025-09-23T16:02:59.109+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-5] kr.co.ch07.controller.MainController     : index1 - UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=User(usid=a202, pass=$2a$10$P2v0ZftB2ZUl00oKmUq6.ul84ZylPRqSl8he7bcz7AZ39BTIuIKzW, name=김철수, age=33, role=ADMIN, regDate=2025-09-23T15:40:48.738117)), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=C9D2E54C6FB5B8A2F6860CB53EFA3CB2], Granted Authorities=[ROLE_ADMIN]]
+2025-09-23T16:02:59.110+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-5] kr.co.ch07.controller.MainController     : index2 - User(usid=a202, pass=$2a$10$P2v0ZftB2ZUl00oKmUq6.ul84ZylPRqSl8he7bcz7AZ39BTIuIKzW, name=김철수, age=33, role=ADMIN, regDate=2025-09-23T15:40:48.738117)
+2025-09-23T16:03:04.422+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-2] kr.co.ch07.controller.MainController     : index1 - UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=User(usid=a204, pass=$2a$10$2qfQxilNqoJ45nik04/T3uZ1u7dCL9bJiKgJ2pxHmDKESQQArpYfG, name=김춘추, age=55, role=MANAGER, regDate=2025-09-23T15:41:39.881895)), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_MANAGER]]
+2025-09-23T16:03:04.423+09:00  INFO 17716 --- [ch07] [http-nio-8080-exec-2] kr.co.ch07.controller.MainController     : index2 - User(usid=a204, pass=$2a$10$2qfQxilNqoJ45nik04/T3uZ1u7dCL9bJiKgJ2pxHmDKESQQArpYfG, name=김춘추, age=55, role=MANAGER, regDate=2025-09-23T15:41:39.881895)
+2025-09-23T16:03:17.546+09:00  INFO 17716 --- [ch07] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-23T16:03:17.549+09:00  INFO 17716 --- [ch07] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-09-23T16:03:17.551+09:00  INFO 17716 --- [ch07] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-23T16:03:17.552+09:00  INFO 17716 --- [ch07] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...
+2025-09-23T16:03:17.656+09:00  INFO 17716 --- [ch07] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.

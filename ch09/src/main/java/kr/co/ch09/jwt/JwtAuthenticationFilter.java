@@ -40,7 +40,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
             return;
         }
 
-        String token = header.substring(TOKEN_PREFIX.length());
+        String token = header.substring(TOKEN_PREFIX.length()).trim();
 
         // 토큰 검사
         try {

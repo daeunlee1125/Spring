@@ -17,14 +17,21 @@ public class Cart {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int cartId;
     private String userid;
-    private int pno;
+
+    // private int pno
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "pno")
+    private Product product;
+
     private int quantity;
+
+
 
     public CartDTO toDTO(){
         return CartDTO.builder()
                 .cartId(cartId)
                 .userid(userid)
-                .pno(pno)
+                .product(product.toDTO())
                 .quantity(quantity)
                 .build();
     }

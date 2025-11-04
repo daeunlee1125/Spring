@@ -23,7 +23,9 @@ public class CartService {
     }
 
     public List<CartDTO> findByUserid(String userid){
-        List<Cart> cartList = cartRepository.findByUserid(userid);
+        // List<Cart> cartList = cartRepository.findByUserid(userid);
+
+        List<Cart> cartList = cartRepository.findCartWithProductByUserid(userid);
 
         return cartList.stream()
                 .map(Cart::toDTO)
